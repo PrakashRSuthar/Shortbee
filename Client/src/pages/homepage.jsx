@@ -39,7 +39,6 @@ const HomePage = () => {
             <li className="hover:bg-gray-100 rounded-md p-2">Poster/Photo Editing</li>
             <li className="hover:bg-gray-100 rounded-md p-2">Reel Making</li>
             <li className="hover:bg-gray-100 rounded-md p-2">Short Riding Services</li>
-            <li className="hover:bg-gray-100 rounded-md p-2">Post A Job</li>
           </ul>
         </aside>
 
