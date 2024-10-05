@@ -9,24 +9,6 @@ const PaymentPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Navbar */}
-      <nav className="bg-white shadow">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <img src="https://via.placeholder.com/50" alt="Logo" className="h-10" />
-            <h1 className="text-lg font-bold">Payment Page</h1>
-          </div>
-          {/* Profile Links */}
-          <div className="flex space-x-4 items-center">
-            <a href="#" className="text-sm text-gray-700">Home</a>
-            <a href="#" className="text-sm text-gray-700">Profile</a>
-            <a href="#" className="text-sm text-gray-700">Settings</a>
-            <input type="text" placeholder="Search in site" className="border border-gray-300 px-3 py-1 rounded-md" />
-          </div>
-        </div>
-      </nav>
-
       {/* Main Content */}
       <main className="container mx-auto py-12 px-4">
         <div className="bg-white shadow rounded-lg p-8">

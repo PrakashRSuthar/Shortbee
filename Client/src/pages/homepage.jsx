@@ -3,27 +3,6 @@ import React from 'react';
 const HomePage = () => {
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Navbar */}
-      <nav className="bg-white shadow">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-          {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <img src="https://via.placeholder.com/50" alt="Logo" className="h-10" />
-            <h1 className="text-lg font-bold">Short Bees</h1>
-          </div>
-          {/* Search bar */}
-          <input
-            type="text"
-            placeholder="Search in site"
-            className="border px-3 py-2 rounded-md"
-          />
-          {/* Profile Icon */}
-          <div className="flex items-center">
-            <button className="w-10 h-10 rounded-full bg-purple-500 text-white">MG</button>
-          </div>
-        </div>
-      </nav>
-
       {/* Sidebar + Main content */}
       <div className="container mx-auto px-4 py-8 flex">
         {/* Sidebar */}
@@ -39,7 +18,6 @@ const HomePage = () => {
             <li className="hover:bg-gray-100 rounded-md p-2">Reel Making</li>
             <li className="hover:bg-gray-100 rounded-md p-2">Short Riding Services</li>
           </ul>
-          <h3 className="text-lg font-bold mb-4" style={{marginTop:"20px", cursor:"pointer"}}>Post a Job</h3>
         </aside>
 
         {/* Main Content */}
