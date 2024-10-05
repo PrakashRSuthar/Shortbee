@@ -7,7 +7,7 @@ import ServicesPage from './pages/services';
 function App() {
   return (
     <div className="App">
-      <ServicesPage />
+      <LandingPage />
     </div>
   );
 }
