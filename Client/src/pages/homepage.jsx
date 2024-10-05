@@ -30,7 +30,6 @@ const HomePage = () => {
         <aside className="w-64 bg-white shadow rounded-lg p-4">
           <h3 className="text-lg font-bold mb-4">Find short gigs</h3>
           <ul className="space-y-2">
-            <li className="hover:bg-gray-100 rounded-md p-2">Home</li>
             <li className="hover:bg-gray-100 rounded-md p-2">Surveys</li>
             <li className="hover:bg-gray-100 rounded-md p-2">Short Videos</li>
             <li className="hover:bg-gray-100 rounded-md p-2">Testing</li>
@@ -40,6 +39,7 @@ const HomePage = () => {
             <li className="hover:bg-gray-100 rounded-md p-2">Reel Making</li>
             <li className="hover:bg-gray-100 rounded-md p-2">Short Riding Services</li>
           </ul>
+          <h3 className="text-lg font-bold mb-4" style={{marginTop:"20px", cursor:"pointer"}}>Post a Job</h3>
         </aside>
 
         {/* Main Content */}
@@ -47,7 +47,7 @@ const HomePage = () => {
           {/* Welcome Section */}
           <div className="text-center mb-10">
             <h2 className="text-4xl font-bold">Welcome to Short Bees</h2>
-            <p className="mt-2 text-gray-600">Find and post short tasks and jobs easily.</p>
+            <p className="mt-2 text-gray-600">Find gigs, complete gigs, be a gigachad.</p>
           </div>
 
           {/* Featured Jobs Section */}
