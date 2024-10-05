@@ -1,15 +1,12 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import LandingPage from './pages/LandingPage'; // Adjust the import path
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      sd
-    </>
-  )
+    <div className="App">
+      <LandingPage />
+    </div>
+  );
 }
 
-export default App
+export default App;
