@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth0 } from "@auth0/auth0-react";
 
-// Separate LoginButton component for Google Sign-in
 const LoginButton = () => {
   const { loginWithRedirect } = useAuth0();
 
@@ -17,7 +16,12 @@ const LoginButton = () => {
 };
 
 const LandingPage = () => {
+  const { loginWithRedirect } = useAuth0();
   const [isSignUp, setIsSignUp] = useState(true); // Toggle between SignUp and SignIn
+
+  const handleGoogleSignIn = () => {
+    loginWithRedirect();
+  };
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -87,13 +91,7 @@ const LandingPage = () => {
             </div>
           </form>
           <div className="text-center mt-4">
-            <button
-              type="button"
-              onClick={handleGoogleSignIn}
-              className="w-full bg-red-500 text-white p-2 rounded-lg mt-4"
-            >
-              Sign in with Google
-            </button>
+            <LoginButton />
           </div>
         </div>
 
