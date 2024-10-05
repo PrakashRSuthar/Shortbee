@@ -1,6 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const LandingPage = () => {
+  const [isSignUp, setIsSignUp] = useState(true); // Toggle between SignUp and SignIn
+
+  // Placeholder function for Google Sign In (implement backend logic here)
+  const handleGoogleSignIn = () => {
+    console.log('Google Sign In triggered');
+    // Redirect to backend Google OAuth route or invoke Google API here
+  };
+
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
       {/* Header Section */}
@@ -14,8 +22,6 @@ const LandingPage = () => {
             {/* Description */}
             <p className="text-gray-800">Join us and start earning with ShortBees now!</p>
           </div>
-          {/* Sign-up Button */}
-          <button className="bg-black text-white px-4 py-2 rounded-md">Sign Up</button>
         </div>
       </header>
 
@@ -23,16 +29,20 @@ const LandingPage = () => {
       <div className="flex-1 container mx-auto flex justify-between items-center py-16">
         {/* Form on the left */}
         <div className="w-1/2 bg-white p-8 rounded-lg shadow-lg">
-          <h2 className="text-2xl font-bold mb-4">Create Your Account</h2>
+          <h2 className="text-2xl font-bold mb-4">
+            {isSignUp ? 'Create Your Account' : 'Sign In to Your Account'}
+          </h2>
           <form className="space-y-4">
-            <div>
-              <label className="block text-sm">Name</label>
-              <input
-                type="text"
-                className="w-full p-2 border border-gray-300 rounded-lg"
-                placeholder="Enter your name"
-              />
-            </div>
+            {isSignUp && (
+              <div>
+                <label className="block text-sm">Name</label>
+                <input
+                  type="text"
+                  className="w-full p-2 border border-gray-300 rounded-lg"
+                  placeholder="Enter your name"
+                />
+              </div>
+            )}
             <div>
               <label className="block text-sm">Email</label>
               <input
@@ -49,18 +59,46 @@ const LandingPage = () => {
                 placeholder="Enter your password"
               />
             </div>
-            <div>
-              <label className="block text-sm">Confirm Password</label>
-              <input
-                type="password"
-                className="w-full p-2 border border-gray-300 rounded-lg"
-                placeholder="Confirm your password"
-              />
+            {isSignUp && (
+              <div>
+                <label className="block text-sm">Confirm Password</label>
+                <input
+                  type="password"
+                  className="w-full p-2 border border-gray-300 rounded-lg"
+                  placeholder="Confirm your password"
+                />
+              </div>
+            )}
+            <div className="flex justify-between space-x-4">
+              <button
+                type="button"
+                onClick={() => setIsSignUp(true)}
+                className={`w-1/2 p-2 rounded-lg border ${
+                  isSignUp ? 'bg-blue-500 text-white' : 'bg-gray-100'
+                }`}
+              >
+                Sign Up
+              </button>
+              <button
+                type="button"
+                onClick={() => setIsSignUp(false)}
+                className={`w-1/2 p-2 rounded-lg border ${
+                  !isSignUp ? 'bg-blue-500 text-white' : 'bg-gray-100'
+                }`}
+              >
+                Sign In
+              </button>
             </div>
-            <button className="w-full bg-blue-500 text-white p-2 rounded-lg mt-4">
-              Create Account
-            </button>
           </form>
+          <div className="text-center mt-4">
+            <button
+              type="button"
+              onClick={handleGoogleSignIn}
+              className="w-full bg-red-500 text-white p-2 rounded-lg mt-4"
+            >
+              Sign in with Google
+            </button>
+          </div>
         </div>
 
         {/* Image on the right */}
