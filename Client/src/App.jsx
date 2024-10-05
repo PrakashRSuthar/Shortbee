@@ -1,7 +1,10 @@
 // App.jsx
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import LandingPage from './Pages/LandingPage';
-import HomePage from '/Pages/HomePage'; // Ensure this path is correct
+import LandingPage from './pages/LandingPage'; // Ensure the path is correct and consistent
+import HomePage from './pages/HomePage';
+import PaymentPage from './pages/Payment';
+import PostJobPage from './pages/PostJob';
+import ServicesPage from './pages/Services';
 
 function App() {
   return (
@@ -9,7 +12,9 @@ function App() {
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/home" element={<HomePage />} />
-        {/* Add more routes as needed */}
+        <Route path="/payment" element={<PaymentPage />} />
+        <Route path="/post-job" element={<PostJobPage />} />
+        <Route path="/services" element={<ServicesPage />} />
       </Routes>
     </Router>
   );
