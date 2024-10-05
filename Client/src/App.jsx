@@ -8,15 +8,9 @@ import ServicesPage from './pages/Services';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<LandingPage />} />
-        <Route path="/home" element={<HomePage />} />
-        <Route path="/payment" element={<PaymentPage />} />
-        <Route path="/post-job" element={<PostJobPage />} />
-        <Route path="/services" element={<ServicesPage />} />
-      </Routes>
-    </Router>
+    <div className="App">
+      <ServicesPage />
+    </div>
   );
 }
 
