@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useAuth0 } from "@auth0/auth0-react";
+import hoo from '../assets/dall.webp'
 
 const LoginButton = () => {
   const { loginWithRedirect } = useAuth0();
@@ -98,7 +99,7 @@ const LandingPage = () => {
         {/* Image on the right */}
         <div className="w-1/2 pl-10">
           <img
-            src="https://via.placeholder.com/400x300"
+            src={hoo}
             alt="Placeholder"
             className="w-full h-auto object-cover rounded-lg shadow"
           />

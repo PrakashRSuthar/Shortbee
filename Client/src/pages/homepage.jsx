@@ -1,4 +1,9 @@
 import React from 'react';
+import shortvid from '../assets/app-video-lead.jpg'
+import capwrite from '../assets/cont.jpeg'
+import survey from '../assets/customer-satisfaction-online-survey-form_53876-124212.webp'
+import test from '../assets/testing_icon-icons.com_72182.png'
+import vid from '../assets/app-video-lead.jpg'
 
 const HomePage = () => {
   return (
@@ -35,7 +40,8 @@ const HomePage = () => {
               {/* Job 1 */}
               <div className="bg-white p-4 rounded-lg shadow">
                 <img
-                  src="https://via.placeholder.com/150"
+                  src={shortvid}
+                  style={{height:"200px", width:"100%"}}
                   alt="Short video"
                   className="rounded-t-md mb-4"
                 />
@@ -46,7 +52,8 @@ const HomePage = () => {
               {/* Job 2 */}
               <div className="bg-white p-4 rounded-lg shadow">
                 <img
-                  src="https://via.placeholder.com/150"
+                  src={capwrite}
+                  style={{height:"200px", width:"100%"}}
                   alt="Caption writing"
                   className="rounded-t-md mb-4"
                 />
@@ -57,7 +64,8 @@ const HomePage = () => {
               {/* Job 3 */}
               <div className="bg-white p-4 rounded-lg shadow">
                 <img
-                  src="https://via.placeholder.com/150"
+                  src={survey}
+                  style={{height:"200px", width:"100%"}}
                   alt="Surveys"
                   className="rounded-t-md mb-4"
                 />
@@ -74,7 +82,8 @@ const HomePage = () => {
               {/* Job 1 */}
               <div className="bg-white p-4 rounded-lg shadow flex items-center">
                 <img
-                  src="https://via.placeholder.com/80"
+                  src={test}
+                  style={{height:"80px", width:"80px"}}
                   alt="Website Testing"
                   className="w-16 h-16 mr-4"
                 />
@@ -87,7 +96,8 @@ const HomePage = () => {
               {/* Job 2 */}
               <div className="bg-white p-4 rounded-lg shadow flex items-center">
                 <img
-                  src="https://via.placeholder.com/80"
+                  src={vid}
+                  style={{height:"80px", width:"80px"}}
                   alt="Video Editing"
                   className="w-16 h-16 mr-4"
                 />
@@ -101,6 +111,7 @@ const HomePage = () => {
               <div className="bg-white p-4 rounded-lg shadow flex items-center">
                 <img
                   src="https://via.placeholder.com/80"
+                  style={{height:"80px", width:"80px"}}
                   alt="Job Category"
                   className="w-16 h-16 mr-4"
                 />

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import flip from '../assets/667cacace972342a23e0152a121ee3fd.jpg'
 const ServicesPage = () => {
   const surveys = [
     { title: "Big Basket", image: "https://via.placeholder.com/150" },

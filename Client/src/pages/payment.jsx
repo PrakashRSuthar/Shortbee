@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import upi from '../assets/1645140.webp'
+import bank from '../assets/istockphoto-1452706695-612x612.jpg'
+import gift from '../assets/thin-line-gift-box-logo-like-bonus-vector-25752670.jpg'
 
 const PaymentPage = () => {
   const [selectedMethod, setSelectedMethod] = useState('UPI Card');
@@ -27,7 +30,8 @@ const PaymentPage = () => {
               }`}
             >
               <img
-                src="https://via.placeholder.com/100"
+                src={upi}
+                style={{height:"100px"}}
                 alt="UPI Card"
                 className="mb-4"
               />
@@ -43,7 +47,8 @@ const PaymentPage = () => {
               }`}
             >
               <img
-                src="https://via.placeholder.com/100"
+                src={bank}
+                style={{height:"100px"}}
                 alt="Bank Transfer"
                 className="mb-4"
               />
@@ -59,7 +64,8 @@ const PaymentPage = () => {
               }`}
             >
               <img
-                src="https://via.placeholder.com/100"
+                src={gift}
+                style={{height:"100px"}}
                 alt="Gift Voucher"
                 className="mb-4"
               />
