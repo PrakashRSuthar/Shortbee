@@ -21,20 +21,6 @@ const LandingPage = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      {/* Header Section */}
-      <header className="bg-white shadow py-6">
-        <div className="container mx-auto flex justify-between items-center">
-          <div className="flex items-center space-x-4">
-            {/* Logo */}
-            <div className="bg-purple-500 w-16 h-16 flex items-center justify-center text-white font-bold rounded-full">
-              LOGO
-            </div>
-            {/* Description */}
-            <p className="text-gray-800 text-xl font-semibold">Join us and start earning with ShortBees now!</p>
-          </div>
-        </div>
-      </header>
-
       {/* Form Section */}
       <div className="flex-1 container mx-auto flex justify-between items-center py-16">
         {/* Form on the left */}
