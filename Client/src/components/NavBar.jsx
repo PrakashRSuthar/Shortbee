@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import React from 'react';
+import logo from '../assets/Designer.png'
 
 const NavBar = () => {
     return (
@@ -7,8 +8,8 @@ const NavBar = () => {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <img src="https://via.placeholder.com/50" alt="Logo" className="h-10" />
-          <h1 className="text-lg font-bold">SmartBees 🐝</h1>
+          <img src={logo} alt="Logo" className="h-10" />
+          <h1 className="text-lg font-bold">SmartBees</h1>
         </div>
         {/* Profile Links */}
         <div className="flex space-x-4 items-center">

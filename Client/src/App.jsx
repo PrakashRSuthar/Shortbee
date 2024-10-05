@@ -7,8 +7,8 @@ import './index.css';
 function App() {
   return (
     <>
-          <NavBar />
-          <AllRoutes />
+      <NavBar />
+      <AllRoutes />
     </>
   );
 }
