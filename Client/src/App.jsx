@@ -5,11 +5,13 @@ import HomePage from './pages/HomePage';
 import PaymentPage from './pages/Payment';
 import PostJobPage from './pages/PostJob';
 import ServicesPage from './pages/Services';
+// import './index.css';
+
 
 function App() {
   return (
     <div className="App">
-      <ServicesPage />
+      <PaymentPage />
     </div>
   );
 }
