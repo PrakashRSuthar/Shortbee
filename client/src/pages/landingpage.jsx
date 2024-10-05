@@ -1,13 +1,23 @@
 import React, { useState } from 'react';
+import { useAuth0 } from "@auth0/auth0-react";
+
+// Separate LoginButton component for Google Sign-in
+const LoginButton = () => {
+  const { loginWithRedirect } = useAuth0();
+
+  return (
+    <button
+      type="button"
+      onClick={() => loginWithRedirect()}
+      className="w-full bg-red-500 text-white p-2 rounded-lg mt-4"
+    >
+      Sign in with Google
+    </button>
+  );
+};
 
 const LandingPage = () => {
   const [isSignUp, setIsSignUp] = useState(true); // Toggle between SignUp and SignIn
-
-  // Placeholder function for Google Sign In (implement backend logic here)
-  const handleGoogleSignIn = () => {
-    console.log('Google Sign In triggered');
-    // Redirect to backend Google OAuth route or invoke Google API here
-  };
 
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col">
@@ -91,13 +101,7 @@ const LandingPage = () => {
             </div>
           </form>
           <div className="text-center mt-4">
-            <button
-              type="button"
-              onClick={handleGoogleSignIn}
-              className="w-full bg-red-500 text-white p-2 rounded-lg mt-4"
-            >
-              Sign in with Google
-            </button>
+            <LoginButton /> {/* Google Sign-in Button */}
           </div>
         </div>
 

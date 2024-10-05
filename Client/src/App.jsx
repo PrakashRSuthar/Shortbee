@@ -1,11 +1,17 @@
-import './App.css';
-import LandingPage from './pages/LandingPage'; // Adjust the import path
+// App.jsx
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import LandingPage from './Pages/LandingPage';
+import HomePage from '/Pages/HomePage'; // Ensure this path is correct
 
 function App() {
   return (
-    <div className="App">
-      <LandingPage />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/home" element={<HomePage />} />
+        {/* Add more routes as needed */}
+      </Routes>
+    </Router>
   );
 }
 
